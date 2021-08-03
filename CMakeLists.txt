@@ -3,4 +3,5 @@ project(typed_literals)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(typed_literals typed_literals.cpp)
+add_library(typed_literals INTERFACE)
+target_include_directories(typed_literals INTERFACE .)
